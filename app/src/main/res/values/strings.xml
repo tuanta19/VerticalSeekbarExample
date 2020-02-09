@@ -1,3 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VerticalSeekbar-Example</string>
+
+	<string name="app_name">DasanFactoryTest</string>
+	<string name="str_project_ver_area">Factory test V1.3 (Hebei 4K smart box)</string>
+	<string name="str_project_ver_area_fj_zyt">Factory test V1.1 (FJITV4K smart box)</string>
+	<string name="str_save_result">Save the result：</string>
+	<string name="str_check_result">Verify result：</string>
+	<string name="str_check_sucess">Same as we write MAC number</string>
+	<string name="str_check_btmac_sucess">Same as we write BT MAC number</string>
+	<string name="str_check_fail">Unlike the write to the STBID number, \nthe write number is：</string>
+	<string name="str_writing_hdcp_start">Is writing people first</string>
+	<string name="str_writing_hdcp_end">A HDCP</string>
+	<string name="str_error_number_out">Input HDCP number exceeds total HDCP number</string>
+	<string name="str_error_hdcp_format">Invalid HDCP KEY format,\nplease confirm!</string>
+	<string name="str_no_hdcp_file">No matching HDCP files found!\nPlease confirm!</string>
+	<string name="str_no_usb">Please insert a USB device!</string>
+	<string name="str_systemversion">system version number：</string>
+	<string name="str_mac">Ethernet MAC：</string>
+	<string name="str_netip">Wired IP：</string>
+	<string name="str_wifimac">Wireless Mac address：</string>
+	<string name="str_wifiip">Wireless IP address：</string>
+	<string name="str_wifilevel">Wireless signal strength：</string>
+	<string name="str_wifistrength_best">Signal is best</string>
+	<string name="str_wifistrength_better">Signal better</string>
+	<string name="str_wifistrength_general">Signal general</string>
+	<string name="str_wifistrength_bad">Signal is poor</string>
+	<string name="str_wifistrength_no">No signal</string>
+	<string name="but_wifisetting">Enter WIFI settings</string>
+	<string name="but_wifisignle">WIFI signal resolution</string>
+	<string name="str_pass">PASS</string>
+	<string name="str_usb1">usb1</string>
+	<string name="str_usb2">usb2</string>
+	<string name="srt_sdcard_str">sdcard</string>
+	<string name="srt_usb1">USB1</string>
+	<string name="srt_usb2">USB2</string>
+	<string name="srt_sd">SD Card</string>
+	<string name="srt_rcu">Remote control</string>
+	<string name="str_wifi">Wireless interface</string>
+	<string name="str_youxian">Ethernet</string>
+	<string name="srt_pass">PASS</string>
+	<string name="str_failed">FAILED</string>
+	<string name="str_Stbid">STBID number：</string>
+	<string name="str_write_mac">Write Mac：</string>
+	<string name="str_read_mac">Read Mac：</string>
+	<string name="str_write_hdcp_success">Write HDCP success!</string>
+	<string name="str_write_mac_success">Write HDCP&amp;Mac success!</string>
+	<string name="str_write_btmac_success">Write BlueTooth Mac success!</string>
+	<string name="str_sn">SN code：</string>
+	<string name="play_time">Play time：</string>
+	<string name="str_stbid_hint">Please enter 12-digit Mac</string>
+	<string name="str_sn_hint">Please enter 19 SN</string>
+	<string name="button_write_stbid">Write HDCP&amp;Mac</string>
+	<string name="button_read_macid">Verify Mac</string>
+	<string name="button_write_btmac">Write BT Mac</string>
+	<string name="button_read_btmac">Verify BT MaC</string>
+	<string name="button_write_hdcp">Write HDCP</string>
+	<string name="button_reboot">Reboot</string>
+	<string name="button_save">Save</string>
+	<string name="button_cannel">Cancel</string>
+	<string name="button_start_ca">Start high security</string>
+	<string name="str_ca_mode">Has started high security mode</string>
+	<string name="str_hdcp14_mode">HDCP 1.4 Key</string>
+	<string name="str_hdcp22_mode">HDCP 2.2 Key</string>
+	<string name="str_hdcp_close">Written</string>
+	<string name="str_hdcp_open">Empty</string>
+	<string name="show_introduce">View the description</string>
+	<string name="hide_introduce">Close the description</string>
+	<string name="str_error_mac">Mac length is less than 12-digit</string>
+	<string name="str_error_sn">SN length is less than 19 bits</string>
+	<string name="str_error_save_stbid">STBID failed to save Please enter</string>
+	<string name="str_error_hdcp_file">HDCP file does not exist, \nplease confirm!</string>
+	<string name="str_error_hdcp_number_file">HDCP number file does not exist, \nplease confirm!</string>
+	<string name="str_error_save_stbsn">SN save failed Please enter</string>
+	<string name="str_error_save_mac">Mac save failed Please re-enter</string>
+	<string name="str_error_same_mac">Ethernet Mac and BT Mac is Same. Please re-enter</string>
+	<string name="str_toast_BootEnable_success">Successfully start high security</string>
+	<string name="str_toast_BootEnable_had">High security is enabled, no need to restart</string>
+	<string name="str_ca_error_01">Chip non-high security mode</string>
+	<string name="str_ca_error_setRsaKey">Setting OTP Key failed</string>
+	<string name="str_ca_error_BootEnable">Set the chip security flag to fail</string>
+	<string name="str_otp_error_getchipid">Start high security failure：get chip type failed</string>
+	<string name="str_otp_error_getidwordlock">Start high security failure：get chip lock ID failed</string>
+	<string name="str_otp_error_getRsaKey">Start high security failure：get chip OTP KEY flag failed</string>
+   	<string name="str_otp_error_RsaKeyLock">Start high security failed：OTP KEY flag is not locked</string>
+   	<string name="str_otp_error_getBootEnable">Start high security failure：get chip safe boot flag failed</string>
+	<string name="str_tiger_error_string">Is an illegal character</string>
+	<string name="str_stbinfo_model">Box model：</string>
+	<string name="str_stbinfo_hw">HW version：</string>
+	<string name="str_stbinfo_sw">SW version：</string>
+	<string name="str_stbinfo_desktop">4K Super Theater：</string>
+	<string name="str_stbinfo_memory">Memory：</string>
+	<string name="str_stbinfo_cpu">CPU：</string>
+	<string name="str_stbinfo_manufacture">Manufacturer：</string>
+	<string name="str_stbinfo_4k_yp">Gifted</string>
+	<string name="str_stbinfo_4k_bst">Everything</string>
+	<string name="str_stbinfo_4k_hs">Number</string>
+	<string name="menu_introduce">Press the "soft keyboard" key to view the usage</string>
+	<string name="text_intrudution">Test preparation：\n
+1, board side：insert the network cable, through DHCP to obtain the IP address \n
+2, the router：open DHCP, open wifi, set the user name HiABC, password 9988776655 \n
+3, veneer end：insert U disk each U disk root directory were stored usb1.mpg, usb2.mpg \n
+4, veneer side：SDCARD port access SD card, SD card root directory stored sdcard.mpg \n
+Test Concern：\n
+1, HDIM / AV output video loop, no screen, no flicker, sound. \n
+2, wired MAC address is normal, wired IP address is normal. \n
+3, the wireless MAC address is normal, the wireless IP address is normal. \n
+4, the number of devices have been connected to normal, has access to the equipment list is normal. \n
+-----> [Press the "Back" button to exit the prompt]
+</string>
+	<string name="text_mst9280_intrudution">Test preparation：\n
+1, board side：insert the network cable, through DHCP to obtain the IP address \n
+2, the router：open DHCP, open wifi, set the user name HiABC, password 9988776655 \n
+3, veneer end：insert U disk each U disk root directory were stored usb1.mpg, usb2.mpg \n
+4, board side：into the factory test, and then insert SDCARD \n
+Test Concern：\n
+1, HDIM / AV output video loop, no screen, no flicker, sound. \n
+2, wired MAC address is normal, wired IP address is normal. \n
+3, the wireless MAC address is normal, the wireless IP address is normal. \n
+4, the number of devices have been connected to normal, has access to the equipment list is normal. \n
+5, exit the factory test must choose [[restart]] button, or wifi can not turn off. \n
+-----> [Press the "Back" button to exit the prompt]
+</string>
+    <string name="button_bttest">BlueTooth</string>
+    <string name="button_unpair">UnPair</string>
+    <string name="button_bt_play">BT Play Music</string>
+    <string name="str_bt_status">No Connect Device</string>
+
+	<string name="srt_bluetooth">Bluetooth</string>
+    <string name="srt_drm_widevine">Widevine</string>
+    <string name="srt_drm_playready">Playready</string>
+
+    <string name="memory_device_str">Internal Memory </string>
+    <string name="sdcard_device_str">Local Disk</string>
+    <string name="ext_sdcard_device_str">External Storage Card</string>
+    <string name="sata_device_str">SATA</string>
+    <string name="usb_device_str">USB</string>
+    <string name="cdrom_device_str">CD ROM</string>
+	<string name="serial_number">Serial #：</string>
+	<string name="str_bt_mac">BT MAC：</string>
+	<string name="str_title_btmac">Write BT MAC：</string>
+	<string name="str_read_btmac">Read BT MAC：</string>
+	<string name="str_erase_mac">Erased MAC Address</string>
 </resources>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:keepScreenOn="true">
+
+    /////////////////////////////////////////////////////////////////////////
+    // Left Info View
+    /////////////////////////////////////////////////////////////////////////
+
+    <LinearLayout
+        android:layout_width="580dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+
+        <!--huang:title android:text="@string/str_project_ver_area"-->
+        <RelativeLayout style="@style/LeftRelative">
+
+            <TextView
+                style="@style/LeftTextTitle"
+                android:text="@string/play_time" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/LeftTextInfo"
+                android:layout_marginLeft="100dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/LeftRelative">
+
+            <TextView
+                style="@style/LeftTextTitle"
+                android:text="@string/str_stbinfo_model" />
+
+            <TextView
+                android:id="@+id/stbinfo_model_id"
+                style="@style/LeftTextInfo"
+                android:layout_marginLeft="100dp" />
+
+            <TextView
+                style="@style/LeftTextTitle"
+                android:layout_marginLeft="265dp"
+                android:text="@string/serial_number" />
+
+            <TextView
+                android:id="@+id/project_us_id"
+                style="@style/LeftTextInfo"
+                android:layout_marginLeft="355dp"
+                android:text="1234567890123" />
+        </RelativeLayout>
+
+        <!--huang:show stbinformation model and 4k ott -->
+        <RelativeLayout style="@style/LeftRelative">
+
+            <TextView
+                style="@style/LeftTextTitle"
+                android:text="@string/str_stbinfo_sw" />
+
+            <TextView
+                android:id="@+id/stbinfo_sw_id"
+                style="@style/LeftTextInfo"
+                android:layout_marginLeft="100dp" />
+
+            <TextView
+                style="@style/LeftTextTitle"
+                android:layout_marginLeft="265dp"
+                android:text="@string/str_mac" />
+
+            <TextView
+                android:id="@+id/netmacid"
+                style="@style/LeftTextInfo"
+                android:layout_marginLeft="390dp" />
+
+        </RelativeLayout>
+
+        <!--huang:show stbinformation hw and sw-->
+        <RelativeLayout style="@style/LeftRelative">
+
+            <TextView
+                style="@style/LeftTextTitle"
+                android:text="@string/str_stbinfo_manufacture" />
+
+            <!--<TextView
+                android:id="@+id/stbinfo_manufacture_id"
+                style="@style/LeftTextInfo"
+                android:layout_marginLeft="390dp" />-->
+            <ImageView
+                android:layout_width="123dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="122dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/dasan_logo" />
+
+            <TextView
+                style="@style/LeftTextTitle"
+                android:layout_marginLeft="265dp"
+                android:text="@string/str_bt_mac" />
+
+            <TextView
+                android:id="@+id/stbinfo_btmac_addr"
+                style="@style/LeftTextInfo"
+                android:layout_marginLeft="355dp" />
+
+        </RelativeLayout>
+
+        <!--<ImageView
+            android:layout_width="540dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="23dp"
+            android:background="#6E6E6E"/>-->
+
+    </LinearLayout>
+
+
+    /////////////////////////////////////////////////////////////////////////
+    // Surface View
+    /////////////////////////////////////////////////////////////////////////
+
+    <LinearLayout
+        android:layout_width="585dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SurfaceView
+            android:id="@+id/VideoView01"
+            android:layout_width="480dp"
+            android:layout_height="240dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginRight="400dp"
+            android:layout_marginBottom="20dp"
+            android:focusable="false" />
+
+        <com.kerrystudio.verticalseekbar_example.VerticalSeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:layout_marginLeft="10dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/custom_progress" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play-64" />
+
+
+    /////////////////////////////////////////////////////////////////////////
+    // Mac Address Write / Read
+    /////////////////////////////////////////////////////////////////////////
+    <!-- On the right side of the interface about stbid and sn ##### -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:layout_marginLeft="590dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <!-- input stbid -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/str_write_mac"
+                style="@style/LeftTextTitle"
+                android:text="@string/str_write_mac"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/str_write_Macid"
+                style="@style/LeftTextInfo"
+                android:layout_marginLeft="120dp"
+                android:hint="@string/str_stbid_hint"
+                android:maxLength="12"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <!-- botton     -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/button_write_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:text="@string/button_write_stbid"
+                android:visibility="invisible"></Button>
+
+            <Button
+                android:id="@+id/button_read_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="174dp"
+                android:text="@string/button_read_macid"
+                android:visibility="invisible"></Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/str_write_btmac"
+                style="@style/LeftTextTitle"
+                android:text="@string/str_title_btmac"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/str_write_btMacid"
+                style="@style/LeftTextInfo"
+                android:layout_marginLeft="120dp"
+                android:hint="@string/str_stbid_hint"
+                android:maxLength="12"
+                android:nextFocusDown="@+id/button_save"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <!-- botton     -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/button_write_btmac"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:text="@string/button_write_btmac"
+                android:visibility="invisible"></Button>
+
+            <Button
+                android:id="@+id/button_read_btmac"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="144dp"
+                android:text="@string/button_read_macid"
+                android:visibility="invisible"></Button>
+
+            <Button
+                android:id="@+id/button_reboot"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="250dp"
+                android:text="@string/button_reboot"></Button>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/LeftTextTitle"
+                android:text="@string/str_check_result" />
+
+            <TextView
+                android:id="@+id/str_save_result"
+                style="@style/LeftTextInfo"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="1dp"
+                android:singleLine="false"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    /////////////////////////////////////////////////////////////////////////
+    // Right Update View
+    /////////////////////////////////////////////////////////////////////////
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="590dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <!-- The test results   -->
+        <!-- usb sd sata ####################### -->
+        <RelativeLayout style="@style/RightRelative">
+
+            <TextView
+                style="@style/RightTextTitle"
+                android:text="@string/srt_bluetooth" />
+
+            <TextView
+                android:id="@+id/rst_bluetooth"
+                style="@style/RightTextPass"
+                android:text="@string/str_pass" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RightRelative">
+
+            <TextView
+                style="@style/RightTextTitle"
+                android:text="@string/str_hdcp14_mode" />
+
+            <TextView
+                android:id="@+id/rst_hdcp14_mode"
+                style="@style/RightTextPass"
+                android:text="@string/str_pass" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RightRelative">
+
+            <TextView
+                style="@style/RightTextTitle"
+                android:text="@string/str_hdcp22_mode" />
+
+            <TextView
+                android:id="@+id/rst_hdcp22_mode"
+                style="@style/RightTextPass"
+                android:text="@string/str_pass" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RightRelative">
+
+            <TextView
+                style="@style/RightTextTitle"
+                android:text="@string/srt_drm_widevine" />
+
+            <TextView
+                android:id="@+id/rst_widevine"
+                style="@style/RightTextPass"
+                android:text="@string/str_pass" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RightRelative">
+
+            <TextView
+                style="@style/RightTextTitle"
+                android:text="@string/srt_drm_playready" />
+
+            <TextView
+                android:id="@+id/rst_playready"
+                style="@style/RightTextPass"
+                android:text="@string/str_pass" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RightRelative">
+
+            <TextView
+                style="@style/RightTextTitle"
+                android:text="@string/srt_usb1" />
+
+            <TextView
+                android:id="@+id/rst_usb1"
+                style="@style/RightTextPass"
+                android:text="@string/str_pass" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RightRelative">
+
+            <TextView
+                style="@style/RightTextTitle"
+                android:text="@string/srt_usb2" />
+
+            <TextView
+                android:id="@+id/rst_usb2"
+                style="@style/RightTextPass"
+                android:text="@string/str_pass" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RightRelative">
+
+            <TextView
+                style="@style/RightTextTitle"
+                android:text="@string/srt_sd" />
+
+            <TextView
+                android:id="@+id/rst_sd"
+                style="@style/RightTextPass"
+                android:text="@string/str_pass" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RightRelative">
+
+            <TextView
+                style="@style/RightTextTitle"
+                android:text="@string/str_youxian" />
+
+            <TextView
+                android:id="@+id/rst_youxian"
+                style="@style/RightTextPass"
+                android:text="@string/str_pass" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

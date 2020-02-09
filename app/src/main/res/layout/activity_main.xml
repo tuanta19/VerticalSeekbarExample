@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.kerrystudio.verticalseekbar_example.VerticalSeekBar
+        android:id="@+id/verticalSeekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="150dip"
+        android:progress="50"
+        android:progressDrawable="@drawable/custom_progress"
+        />
+
+    <SeekBar
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/verticalSeekbar"
+        android:background="#3BD9EC" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="20dp"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
